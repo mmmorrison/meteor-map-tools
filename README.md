@@ -2,7 +2,7 @@
 Meteor + map-tools.js demo project Exemple
 
 ### Instanciate the Map
-```javavascript
+```javascript
 if (Meteor.isClient) {
     Meteor.startup(function() {
         var map = new mapTools({
