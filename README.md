@@ -1,9 +1,13 @@
 # meteor-map-tools 
+
 ***work in progress***
 
-Meteor + map-tools.js demo project Exemple
+### What is this page?
+This is a Meteor + map-tools.js demo lab project, that uses `bower` as install method. My goal is to enhance map-tools.js with helpers for Meteor reactivity (if there is a need) and then create a Meteor package.
 
-#### Install bower package 
+### Install steps
+
+#### Add bower package manager
 ```bash
 meteor add mquandalle:bower
 ```
