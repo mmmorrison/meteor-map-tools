@@ -3,7 +3,7 @@
 ***work in progress***
 
 ### What is this page?
-This is a Meteor + [map-tools.js](https://github.com/yagoferrer/map-tools) demo lab project, that uses `bower` as install method. My goal is to enhance map-tools.js with helpers for Meteor reactivity (if there is a need) and then create a Meteor package.
+This is a [Meteor](https://github.com/meteor/meteor) & [map-tools.js](https://github.com/yagoferrer/map-tools) demo lab project, that uses `bower` as install method. My goal is to enhance map-tools.js with helpers for Meteor reactivity (if there is a need) and then create a Meteor package.
 
 ### Install steps
 
