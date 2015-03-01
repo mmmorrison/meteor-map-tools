@@ -1,6 +1,17 @@
 # meteor-map-tools 
 Meteor + map-tools.js demo project Exemple
 
+### Create bower.json
+```json
+{
+  "name": "meteor-map-tools",
+  "version": "0.1.0",
+  "dependencies": {
+    "map-tools": "0.6.0"
+  }
+}
+```
+
 ### Load Map
 ```javascript
 if (Meteor.isClient) {
