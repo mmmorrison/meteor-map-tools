@@ -1,7 +1,7 @@
 # meteor-map-tools 
 Meteor + map-tools.js demo project Exemple
 
-### Instanciate the Map
+### Load Map
 ```javascript
 if (Meteor.isClient) {
     Meteor.startup(function() {
@@ -16,7 +16,7 @@ if (Meteor.isClient) {
 }
 ```
 
-### A Add Map Template
+### Map Template
 ```html
 <body>
 {{> map}}
@@ -26,7 +26,7 @@ if (Meteor.isClient) {
 </template>
 ```
 
-### Style Need it
+### Style
 ```css
 html, body, #map {
     height: 100%;
