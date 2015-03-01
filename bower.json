@@ -1,0 +1,7 @@
+{
+  "name": "meteor-map-tools",
+  "version": "0.1.0",
+  "dependencies": {
+    "map-tools": "0.6.0"
+  }
+}
