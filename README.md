@@ -1,5 +1,5 @@
 # meteor-map-tools
 
-** work in progress **
+**work in progress**
 
 This is a test lab project for: Meteor + map-tools
