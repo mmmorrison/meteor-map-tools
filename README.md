@@ -1,7 +1,29 @@
 # meteor-map-tools 
-Meteor + map-tools.js demo project Exemple
 
-### Load Map
+***work in progress***
+
+### What is this page?
+This is a [Meteor](https://github.com/meteor/meteor) & [map-tools.js](https://github.com/yagoferrer/map-tools) demo lab project, that uses `bower` as install method. My goal is to enhance map-tools.js with helpers for Meteor reactivity (if there is a need) and then: create a Meteor package that can be mantained from this repo.
+
+### Install steps
+
+#### Add bower package manager
+```bash
+meteor add mquandalle:bower
+```
+
+#### Create bower.json
+```json
+{
+  "name": "meteor-map-tools",
+  "version": "0.1.0",
+  "dependencies": {
+    "map-tools": "0.6.0"
+  }
+}
+```
+
+#### Load Map
 ```javascript
 if (Meteor.isClient) {
     Meteor.startup(function() {
@@ -16,7 +38,7 @@ if (Meteor.isClient) {
 }
 ```
 
-### Map Template
+#### Map Template
 ```html
 <body>
 {{> map}}
@@ -26,7 +48,7 @@ if (Meteor.isClient) {
 </template>
 ```
 
-### Style
+#### Style
 ```css
 html, body, #map {
     height: 100%;
