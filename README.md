@@ -13,7 +13,8 @@ This is what I have so far:
  4. Track changes
  5. Add new Markers pushed from server-side.
 
-### Install steps
+
+### Setup
 
 #### Add bower package manager
 ```bash
@@ -30,6 +31,7 @@ meteor add mquandalle:bower
   }
 }
 ```
+## Code Examples
 
 #### Load Map
 After loading the Map, I add the Markers from a Mongo Query and I save the UID back into Mongo for cross-reference.
