@@ -24,18 +24,34 @@ meteor add mquandalle:bower
 ```
 
 #### Load Map
+
 ```javascript
-if (Meteor.isClient) {
-    Meteor.startup(function() {
-        var map = new mapTools({
-            id: 'map',
-            lat: 41.3833,
-            lng: 2.1833
-        }, function (err, instance) {
-            console.log('Map Loaded!', instance);
-        });
-    });
-}
+  Meteor.startup(function () {
+    function mapLoaded(err, instance) {
+      var addedMarkers = map.addMarker(Markers.find({}).fetch());
+      // Save UID for Cross reference
+      var item, x;
+      for (x in addedMarkers) {
+        item = addedMarkers[x];
+        Markers.update({_id: item._id}, {$set: {uid: item.data.uid}});
+      }
+    }
+    map = new mapTools({id: 'map', lat: 41.3833, lng: 2.1833}, mapLoaded);
+  });
+```
+
+```javascript
+  Tracker.autorun(function () {
+    var items = Markers.find({}).fetch();
+    // Adds Markers found Mongo but not in the Map
+    var item, x;
+    for (x in items) {
+      var item = items[x];
+      if (item.lat && (!item.uid || !map.markers.all[item.uid])) {
+        map.addMarker(item);
+      }
+    }
+  });
 ```
 
 #### Map Template
