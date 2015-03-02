@@ -7,11 +7,11 @@ This is a [Meteor](https://github.com/meteor/meteor) & [map-tools.js](https://gi
 
 ### Project status
 This is what I have so far: 
-1. Load the Map
-2. Query Mongo for Markers to add.
-3. Save UID back into Mongo for cross-reference.
-4. Track changes
-5. Add new Markers pushed from server-side.
+ 1. Load the Map
+ 2. Query Mongo for Markers to add.
+ 3. Save UID back into Mongo for cross-reference.
+ 4. Track changes
+ 5. Add new Markers pushed from server-side.
 
 ### Install steps
 
