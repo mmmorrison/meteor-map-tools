@@ -5,6 +5,14 @@
 ### What is this page?
 This is a [Meteor](https://github.com/meteor/meteor) & [map-tools.js](https://github.com/yagoferrer/map-tools) demo lab project, that uses `bower` as install method. My goal is to enhance map-tools.js with helpers for Meteor reactivity (if there is a need) and then: create a Meteor package that can be mantained from this repo.
 
+### Project status
+This is what I have so far: 
+1 Load the Map
+2 Query Mongo for Markers to add.
+3 Save UID back into Mongo for cross-reference.
+4 Track changes
+5 Add new Markers pushed from server-side.
+
 ### Install steps
 
 #### Add bower package manager
