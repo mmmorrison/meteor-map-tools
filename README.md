@@ -24,12 +24,12 @@ meteor add mquandalle:bower
 ```
 
 #### Load Map
-
+After loading the Map, I add the Markers from a Mongo Query and I save the UID back into Mongo for cross-reference.
 ```javascript
   Meteor.startup(function () {
     function mapLoaded(err, instance) {
       var addedMarkers = map.addMarker(Markers.find({}).fetch());
-      // Save UID for Cross reference
+      // Save UID for Cross-reference
       var item, x;
       for (x in addedMarkers) {
         item = addedMarkers[x];
@@ -40,6 +40,8 @@ meteor add mquandalle:bower
   });
 ```
 
+#### Simple Reactivity
+Track changes into the Collection and add new added Markers into Mongo.
 ```javascript
   Tracker.autorun(function () {
     var items = Markers.find({}).fetch();
