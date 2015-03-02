@@ -57,3 +57,20 @@ html, body, #map {
 }
 ```
 
+#### Adding Markers
+```javascript
+Markers = new Mongo.Collection("markers");
+// Server
+if (Meteor.isServer) {
+  Meteor.startup(function () {
+      Markers.insert({
+          lat: 41.3833,
+          lng: 2.1833,
+          title: 'Barcelona'
+      });
+  });
+}
+// Client
+map.addMarker(Markers.find({}).fetch());
+```
+
